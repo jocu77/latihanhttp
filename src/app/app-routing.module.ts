@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'submit',
+    loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
+  },
 ];
 
 @NgModule({

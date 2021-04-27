@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>submit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item> <ion-input type="text" [(ngModel)]="post.name"> </ion-input> </ion-item>
+  <ion-item> <ion-input type="text" [(ngModel)]="post.color"> </ion-input> </ion-item>
+  <ion-item> <ion-input type="text" [(ngModel)]="post.pantone_value"> </ion-input> </ion-item>
+  <ion-button (click)="submit()">SIMPAN DATA</ion-button>
+</ion-content>
